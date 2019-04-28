@@ -1,27 +1,18 @@
-$font: "Geometria", "Arial", "sans-serif";
+$font: "Lato", "Arial", "sans-serif";
+$secondfont: "GothamPro", "Arial", "sans-serif";
 
 $white: #ffffff;
 $black: #000000;
 
-$color-text: $white;
-$color-text-alt: #2d2d2d;
-
-$color1: #08e8de;
-$color2: #c32727;
-$color3: #242424;
-$color4: #3f454b;
-$color5: #28c4bd;
-
-$color6: #eaeaea;
-$color7: #777777;
-$color8: #0e1114;
-$color9: #00b2b0;
-$color10: #07c6bf;
-$color11: #168681;
+$font-color: $black;
+$font-color-alt: $white;
 
 $mobile: 320px;
-$tablet: 768px;
-$desktop: 1230px;
-$big-desktop: 1440px;
+$big-mobile: 420px;
+$tablet: 767px;
+$desktop: 1024px;
+$big-desktop: 1366px;
+$large-desktop: 1920px;
 
-$main-spacing: 0.48px;
+
+$color1: #f10000;
