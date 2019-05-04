@@ -25,6 +25,13 @@
   justify-content: space-between;
 }
 
+.nav--white {
+  .nav__item-link {
+    color: $font-color-alt;
+  }
+}
+
+
 @media (min-width: $big-mobile) {
   .nav__item-link {
     padding-left: 10px;

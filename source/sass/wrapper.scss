@@ -36,3 +36,13 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $big-desktop) {
+  .wrapper {
+    width: $big-desktop;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

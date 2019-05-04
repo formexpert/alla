@@ -1,5 +1,5 @@
 .header {
-  background-image: url("../img/bg-index.jpg");
+  // background-image: url("../img/bg-index.jpg");
   background-size: cover;
   min-height: 500px;
   padding-top: 20px;
@@ -26,5 +26,12 @@
     height: 2px;
     background-color: #222;
     box-shadow: 0 8px 0 0 #222, 0 16px 0 0 #222
+  }
+
+  &--white {
+    &::before {
+      background-color: #ffffff;
+      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    }
   }
 }
