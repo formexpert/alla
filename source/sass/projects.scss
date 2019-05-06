@@ -1,0 +1,40 @@
+.projects {
+  width: 100vw;
+}
+
+.project__block {
+  background-color: $color2;
+}
+
+.projects__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  color: $font-color;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: $white;
+    left: 12px;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: $color1;
+    left: -5px;
+    top: 5px;
+  }
+}

@@ -1,0 +1,32 @@
+.btn-decoration {
+  padding: 0;
+  margin: 0;
+  font-family: $secondfont;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 3px;
+  background-color: $black;
+  color: $font-color-alt;
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid $white;
+    border-right: 1px solid $white;
+    transform: rotate(-45deg);
+    right: 25px;
+    top: 15px;
+  }
+}

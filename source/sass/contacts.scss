@@ -57,3 +57,18 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts__title {
+    padding-left: 75px;
+    padding-bottom: 40px;
+
+    &::before {
+      left: 55px;
+    }
+
+    &::after {
+      left: 25px;
+    }
+  }
+}

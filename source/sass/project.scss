@@ -1,0 +1,87 @@
+.project {
+  padding-bottom: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: $black;
+    bottom: 32px;
+    left: calc(50% - 50px);
+  }
+}
+
+.project:last-child {
+  padding-bottom: 0;
+
+  &::before {
+    content: none;
+  }
+}
+
+.project__img {
+  &--alone {
+    display: none;
+  }
+}
+
+.project__description {
+  background-color: $color2;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  max-width: 420px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: $font-color-alt;
+  padding-bottom: 20px;
+}
+
+.project__description-text {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $font-color-alt;
+  padding-bottom: 30px;
+}
+
+.project__galery-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.project__galery-item {
+  width: 50%;
+}
+
+.project__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.project__btn {
+  max-width: 266px;
+  padding-right: 30px;
+}
