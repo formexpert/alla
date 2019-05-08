@@ -1,10 +1,35 @@
 .header {
-  // background-image: url("../img/bg-index.jpg");
+  background-image: url("../img/bg-index.jpg");
+  background-color: #222;
   background-size: cover;
   min-height: 500px;
   padding-top: 20px;
   padding-bottom: 60px;
   position: relative;
+
+  &--design {
+    background-image: none;
+    background-color: transparent;
+    z-index: 11;
+    min-height: 0;
+    padding: 0;
+  }
+}
+
+.header__wrap-container {
+  position: relative;
+  width: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__container {
+  position: absolute;
+  top: 20px;
+
+  .header__menu-btn {
+    right: -40px;
+  }
 }
 
 .header__menu-btn {
