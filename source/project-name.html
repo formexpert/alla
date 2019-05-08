@@ -8,6 +8,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
   <header class="header header--design">
@@ -36,12 +37,14 @@
     <div class="design">
       <section class="design__galery">
         <h3><span class="title-dec">Изображения</span></h3>
-        <ul class="design__galery-list">
-          <li class="design__galery-item"><img class="desing__galery-pic" src="img/design__galery-pic-1.jpg" alt="Описание фото"></li>
-          <li class="design__galery-item"><img class="desing__galery-pic" src="img/design__galery-pic-2.jpg" alt="Описание фото"></li>
-          <li class="design__galery-item"><img class="desing__galery-pic" src="img/design__galery-pic-3.jpg" alt="Описание фото"></li>
-          <li class="design__galery-item"><img class="desing__galery-pic" src="img/design__galery-pic-4.jpg" alt="Описание фото"></li>
-        </ul>
+        <div class="galery__slider swiper-container">
+          <ul class="design__galery-list swiper-wrapper">
+            <li class="design__galery-item swiper-slide"><img class="desing__galery-pic" src="img/design__galery-pic-1.jpg" alt="Описание фото"></li>
+            <li class="design__galery-item swiper-slide"><img class="desing__galery-pic" src="img/design__galery-pic-2.jpg" alt="Описание фото"></li>
+            <li class="design__galery-item swiper-slide"><img class="desing__galery-pic" src="img/design__galery-pic-3.jpg" alt="Описание фото"></li>
+            <li class="design__galery-item swiper-slide"><img class="desing__galery-pic" src="img/design__galery-pic-4.jpg" alt="Описание фото"></li>
+          </ul>
+        </div>
       </section>
       <section class="design__about">
         <div class="wrapper">
@@ -87,14 +90,19 @@
       </section>
       <section class="other">
         <h3 class="other__title">Другие проекты</h3>
-        <ul class="other__list">
-          <li class="other__item"><a class="other__link" href="#"><img src="img/other-pic-1.jpg" alt=""></a></li>
-          <li class="other__item"><a class="other__link" href="#"><img src="img/other-pic-2.jpg" alt=""></a></li>
-          <li class="other__item"><a class="other__link" href="#"><img src="img/other-pic-1.jpg" alt=""></a></li>
-          <li class="other__item"><a class="other__link" href="#"><img src="img/other-pic-2.jpg" alt=""></a></li>
-        </ul>
+        <div class="swiper-container">
+          <ul class="other__list swiper-wrapper">
+            <li class="other__item swiper-slide"><a class="other__link" href="#"><img src="img/other-pic-1.jpg" alt=""></a></li>
+            <li class="other__item swiper-slide"><a class="other__link" href="#"><img src="img/other-pic-2.jpg" alt=""></a></li>
+            <li class="other__item swiper-slide"><a class="other__link" href="#"><img src="img/other-pic-1.jpg" alt=""></a></li>
+            <li class="other__item swiper-slide"><a class="other__link" href="#"><img src="img/other-pic-2.jpg" alt=""></a></li>
+          </ul>
+        </div>
       </section>
     </div>
   </main>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/other.js"></script>
 </body>
 </html>
