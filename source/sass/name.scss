@@ -12,6 +12,11 @@
   color: $font-color;
   text-decoration: none;
   position: relative;
+
+  &:hover {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 .name__person {
