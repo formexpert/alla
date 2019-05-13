@@ -1,0 +1,37 @@
+.other {
+  padding-top: 50px;
+}
+
+.other__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: $font-color;
+  padding-left: 10px;
+  padding-bottom: 35px;
+}
+
+.other__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: $big-mobile) {
+  .other__title {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .other__title {
+    padding-left: 55px;
+  }
+
+  .other__list {
+    display: flex;
+  }
+}

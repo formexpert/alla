@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Контакты</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <div class="contacts">
+    <div class="header contacts__header">
+      <div class="wrapper">
+        <button class="header__menu-btn header__menu-btn--white"></button>
+        <section class="name name--white">
+          <h1 class="name__person">
+            <a class="name__link" href="index.html">
+              <span class="name__first">Alla</span> <img class="name__logo" src="img/watermark--white.png" width="34" height="22" alt=""> <span class="name__second">Kazimirova</span>
+            </a>
+          </h1>
+          <p class="name__description">ваш личный дизайнер интерьера</p>
+        </section>
+        <nav class="nav nav--white">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__item-link nav__item-link--white" href="projects.html">Проекты</a></li>
+            <li class="nav__item"><a class="nav__item-link nav__item-link--white" href="services.html">Услуги</a></li>
+            <li class="nav__item"><a class="nav__item-link nav__item-link--white" href="about-disign.html">О Дизайне</a></li>
+            <li class="nav__item"><a class="nav__item-link nav__item-link--white" href="about-me.html">О Себе</a></li>
+            <li class="nav__item"><a class="nav__item-link nav__item-link--white">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <div class="wrapper">
+        <section class="contacts__block">
+          <h1 class="contacts__title">Обратная связь</h1>
+          <form class="contacts__form request" action="post">
+            <div class="request__wrap">
+              <p class="request__item">
+                <label class="request__label" for="contacts__name">Ваше имя *</label>
+                <input class="request__input" type="text" name="contacts__name" id="contacts__name">
+              </p>
+              <p class="request__item">
+                <label class="request__label" for="contacts__phone">Телефон</label>
+                <input class="request__input" type="text" name="contacts__phone" id="contacts__phone">
+              </p>
+              <p class="request__item request__item--email">
+                <label class="request__label" for="contacts__email">Email *</label>
+                <input class="request__input" type="text" name="contacts__email" id="contacts__email">
+              </p>
+              <p class="request__item request__item--messange">
+                <label class="request__label" for="contacts__messange">Сообщение</label>
+                <textarea class="request__input request__input--textarea" type="text" id="contacts__messange" name="contacts__messange"></textarea>
+              </p>
+              <p class="request__item request__item--consent">
+                <input class="request__input request__input--checkbox" type="checkbox" id="contacts__personal-field" name="contacts__personal-field" checked>
+                <label class="request__label request__label--checkbox" for="contacts__personal-field">Согласие на обработку <a class="request__label-link" href="personal-data.html">персональных данных</a></label>
+              </p>
+            </div>
+            <div class="request__wrap-right">
+              <p class="request__wrap-text request__wrap-text--title">Возникли вопросы?</p>
+              <p class="request__wrap-text">Вы можете проконсультироваться по любому вопросу бесплатно.</p>
+              <div class="request__right-contacts">
+                <p class="request__phone-text">Phone: <a class="request__link request__link--phone" href="tel:+79001999422">+7 900-1-999-422</a></p>
+                <p class="request__email-text">Email: <a class="request__link request__link--email" href="mailto:info@design-alla.ru">info@design-alla.ru</a></p>
+              </div>
+              <p class="request__btn-container"><input class="btn-decoration" type="submit" value="Отправить"></p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

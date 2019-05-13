@@ -1,0 +1,67 @@
+.projects {
+  width: 100vw;
+}
+
+.project__block {
+  background-color: $color2;
+}
+
+.projects__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  color: $font-color;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: $color1;
+    left: 10px;
+    top: 7px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .projects__title {
+    padding-left: 70px;
+
+    &::after {
+      left: 30px;
+    }
+  }
+
+  .title-dec {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 115px;
+      width: 1px;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      top: 35px;
+      left: -15px;
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 35px;
+      top: 0;
+      left: -17px;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      z-index: 11;
+    }
+  }
+}

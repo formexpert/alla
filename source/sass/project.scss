@@ -1,0 +1,199 @@
+.project {
+  padding-bottom: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: $black;
+    bottom: 32px;
+    left: calc(50% - 50px);
+  }
+}
+
+.project:last-child {
+  padding-bottom: 0;
+
+  &::before {
+    content: none;
+  }
+}
+
+.project__img {
+  &--alone {
+    display: none;
+  }
+}
+
+.project__description {
+  background-color: $color2;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  max-width: 420px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: $font-color-alt;
+  padding-bottom: 20px;
+}
+
+.project__description-text {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $font-color-alt;
+  padding-bottom: 30px;
+}
+
+.project__galery-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.project__galery-item {
+  width: 50%;
+}
+
+.project__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.project__btn {
+  max-width: 266px;
+  padding-right: 30px;
+}
+
+.project__desription-container {
+  border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
+  padding-left: 10px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    top: 0;
+    left: -3px;
+    background-color: #a7a7a7;
+  }
+}
+
+@media (min-width: $big-mobile) {
+  .project__description {
+    max-width: 560px;
+  }
+
+  .project__galery-item {
+    width: 33.3%;
+  }
+
+  .project__desription-container {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .project {
+    padding-bottom: 110px;
+
+    &::before {
+      bottom: 52px;
+    }
+  }
+
+  .project__description {
+    max-width: 650px;
+    padding-left: 40px;
+  }
+
+  .project__galery-list {
+    width: 42vw;
+    margin-right: 0;
+  }
+
+  .project__gallery {
+    display: flex;
+  }
+
+  .project__galery-item  {
+    width: 50%;
+  }
+
+  .project__img-container {
+    width: 58vw;
+    background-image: url("../img/project-sun-pic-big.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $desktop) {
+  .project__title {
+    font-size: 30px;
+  }
+
+  .project__galery-list {
+    padding-top: 264px;
+  }
+
+  .project__description {
+    position: relative;
+    width: 42vw;
+  }
+
+  .project__description {
+    position: absolute;
+    right: 0;
+  }
+
+  .project__galery-item {
+    width: 33.3%;
+  }
+
+  .project--left {
+    .project__description {
+      right: auto;
+      left: 0;
+    }
+
+    .project__img-container {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $big-desktop) {
+  .project__description {
+    max-width: 100%;
+    padding-left: 55px;
+  }
+
+  .project__description-text {
+    max-width: 600px;
+  }
+}
